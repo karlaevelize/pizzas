@@ -13,7 +13,7 @@ export default function reducer(state = initialState, action) {
       const pizzaId = action.payload
 
       const favorites = state.favorites.includes(pizzaId)
-        ? state.favorites.filter(id => id !== id)
+        ? state.favorites.filter(id => id !== pizzaId)
         : [...state.favorites, pizzaId]
 
       return {

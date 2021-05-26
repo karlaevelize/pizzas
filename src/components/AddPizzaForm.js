@@ -11,9 +11,6 @@ export default function AddPizzaForm() {
 
   const submit = event => {
     event.preventDefault();
-
-    console.log("new pizza:", name, description);
-
     dispatch(addPizza({name, description, image}))
   };
 
