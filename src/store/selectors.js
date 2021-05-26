@@ -8,5 +8,4 @@ export const selectRestaurantsWithPizzas = reduxState => {
           pizza.id === pizzaId))
     }
   })
-
 }
