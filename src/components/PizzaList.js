@@ -21,7 +21,7 @@ export default function PizzaList() {
       <div>
         {sortedPizzas.map(pizza => {
           return (
-            <div>
+            <div key ={pizza.id}>
               <h4>{pizza.name}</h4>
               <button onClick={() => dispatch(toggleFavorite(pizza.id))}>{user.favorites.includes(pizza.id) ? "♥" : "♡"}</button>
               <p>Bought {pizza.bought} times</p>
