@@ -11,7 +11,7 @@ export default function RestaurantListt() {
   return (
     <div>
       <h1>Restaurant List</h1>
-      {/* coded added after the lecture */}
+      {/* code added after the lecture */}
         {restWithPizza.map(restaurant => (
           <div>
            <p> Restaurant: <b>{restaurant.name}</b></p>
